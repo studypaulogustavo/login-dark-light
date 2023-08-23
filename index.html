@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login dark & light</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+    <main id="container">
+        <form action="" id="login_form">
+            <div class="dark-light-mode-icon">
+                <i id="mode_icon" class="fa-solid fa-moon fa-fade"></i>
+            </div>
+            <div id="form_header">
+                <h1>Login</h1>
+            </div>
+
+            <div id="social_media">
+
+                <a href="#">
+                    <img src="./img/facebook-logo.png" alt="Facebook logo"></a>
+
+                <a href="#">
+                    <img src="./img/google-logo.png" alt="Google logo"></a>
+
+                <a href="#">
+                    <img src="./img/github-logo.png" alt="Github logo"></a>
+            </div>
+
+
+            <!-- ==== INPUTS ===  -->
+            <div id="container_inputs">
+                <div class="input-box">
+
+                    <label for="name">Nome
+                        <div class="input_field">
+                            <i class="fa-solid fa-user-tie"></i>
+                            <input type="text" id="name" name="name">
+                        </div>
+                    </label>
+
+                </div>
+
+                <div class="input-box">
+
+                    <label for="email">E-mail
+                        <div class="input_field">
+                            <i class="fa-solid fa-at"></i>
+                            <input type="email" id="email" name="email">
+                        </div>
+                    </label>
+
+                </div>
+
+
+                <div class="input-box">
+
+                    <label for="password">Senha
+                        <div class="input_field">
+                            <i class="fa-solid fa-key"></i>
+                            <input type="password" id="password" name="password">
+                        </div>
+                    </label>
+
+                    <div id="forgot_password">
+                        <a href="#">Esqueceu sua senha?</a>
+                    </div>
+
+                </div>
+
+                <button type="button" id="login_button">
+                    Login
+                </button>
+
+            </div>
+
+            </div>
+            <div class="love">
+                <p><i class="fa-solid fa-code fa-bounce"></i> Desenvolvido por <a href="#"> Paulo Gustavo Ferreira</a>
+                </p>
+            </div>
+        </form>
+    </main>
+    <script type="text/javascript" src="./js/main.js"></script>
+</body>
+
+</html>

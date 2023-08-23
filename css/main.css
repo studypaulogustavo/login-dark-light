@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Gudea:400,700);
+
+/** Variables - colors **/
+:root {
+    /* Light */
+    --color-light-50: #FAFAFA;
+    --color-light-100: #D6D6D6;
+    --color-light-200: #8F8F8F;
+
+    /* Dark */
+    --color-dark-50: #797984;
+    --color-dark-100: #312d37;
+    --color-dark-900: #000;
+
+    /* Green */
+    --color-green-50: #7bff00;
+    --color-yellow-100: #dbcb3b;
+    --color-green-200: #21ce55;
+
+    /* Gradient */
+    --color-gradient: linear-gradient(50deg, var(--color-green-50), var(--color-yellow-100), var(--color-green-200));
+    --color-gradient-dark: linear-gradient(-50deg, var(--color-dark-50), var(--color-dark-100), var(--color-dark-900));
+}
+
+/* General */
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-gradient);
+
+}
+
+/* ==== LOGIN FORM === */
+#login_form .dark-light-mode-icon i {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 35px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* ==== HEADER ==== */
+#form_header h1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+/* ==== LOGIN FORM ==== */
+#login_form {
+    display: flex;
+    flex-direction: column;
+    padding: 2px 45px 2px 45px;
+    border-radius: 50%;
+    background: var(--color-gradient);
+    outline: 9px double var(--color-green-50);
+    box-shadow: 10px 10px 17px 3px rgba(0, 0, 0, 0.285);
+    animation: dark-to-light-background 0.3s ease-in-out;
+}
+
+/* ==== SOCIAL MEDIA ==== */
+#social_media {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid var(--color-green-50);
+}
+
+#social_media img {
+    margin-top: 15px;
+    width: 18px;
+}
+
+#social_media img:hover {
+    transform: scale(1.2);
+}
+
+/* ==== INPUTS ==== */
+
+#container_inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+    gap: 12px;
+}
+
+.input-box>label {
+    font-size: 12px;
+    color: var(--color-dark-50);
+}
+
+.input_field {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid var(--color-green-50);
+    cursor: text;
+}
+
+.input_field i {
+    font-size: 18px;
+    cursor: text;
+    color: var(--color-dark-900);
+}
+
+.input_field input {
+    border: none;
+    width: 260px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    background-color: transparent;
+    font-size: 15px;
+}
+
+.input_field input:focus {
+    outline: none;
+}
+
+/* ==== Forgot password ==== */
+#forgot_password a {
+    text-decoration: none;
+    color: var(--color-dark-50);
+    font-size: 12px;
+}
+
+#forgot_password a:hover {
+    color: var(--color-green-200);
+}
+
+/* ==== LOGIN BUTTON ==== */
+#login_button {
+    margin-top: 15px;
+    border: 3px solid var(--color-dark-900);
+    background: var(--color-gradient);
+    padding: 22px;
+    border-radius: 50%;
+    color: var(--color-dark-900);
+    font-weight: bold;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+#login_button:hover {
+    transform: scale(1.07);
+    background: var(--color-yellow-100);
+}
+
+
+
+.love {
+    position: absolute;
+    right: 20px;
+    bottom: 0px;
+    font-size: 0.55rem;
+    font-weight: normal;
+}
+
+.love p {
+    font-family: 'Gudea', sans-serif;
+    color: var(--color-dark-900);
+    font-weight: normal;
+}
+
+.love a {
+    color: var(--color-dark-900);
+    text-decoration: none;
+}
+
+/* Dark Mode */
+.dark#login_form {
+    color: var(--color-light-50);
+    background: var(--color-gradient-dark);
+    animation: light-to-dark-background 0.3s ease-in-out;
+}
+
+.dark#login_form #login_button {
+    border: 3px solid var(--color-green-50);
+}
+
+.dark#login_form .input_field input,
+.dark#login_form .input_field i {
+    color: var(--color-light-50);
+
+}
+
+@keyframes dark-to-light-background {
+    0% {
+        background-color: var(--color-dark-100);
+    }
+
+    100.0% {
+        background-color: var(--color-light-50);
+    }
+}
+
+@keyframes light-to-dark-background {
+    0% {
+        background-color: var(--color-light-50);
+    }
+
+    100.0% {
+        background-color: var(--color-dark-100);
+    }
+}
