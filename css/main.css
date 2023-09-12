@@ -31,6 +31,61 @@
     box-sizing: border-box;
 }
 
+@media screen and (max-width: 600px) {
+    .input_field input {
+        width: 180px !important;
+        padding-bottom: 3px !important;
+        padding-left: 0px !important;
+        font-size: 3px !important;
+    }
+
+    #login_form {
+        height: 290px !important;
+        width: 290px !important;
+    }
+
+    #login_form .dark-light-mode-icon i {
+        font-size: 15px !important;
+    }
+
+    #form_header h1 {
+        font-size: 14px !important;
+    }
+
+    #social_media img {
+        margin-top: 10px !important;
+        width: 14px !important;
+    }
+
+    #container_inputs {
+        gap: 0px !important;
+    }
+
+    .input-box label {
+        font-size: 8px !important;
+    }
+
+    .input_field i {
+        font-size: 8px !important;
+    }
+
+    #forgot_password a {
+        font-size: 8px !important;
+    }
+
+    #login_button {
+        margin-top: 2px !important;
+        border: 2px solid var(--color-dark-900) !important;
+        padding: 9px !important;
+        font-weight: bold;
+        font-size: 12px !important;
+    }
+
+    .love {
+        font-size: 8px !important;
+    }
+}
+
 #container {
     height: 100vh;
     width: 100vw;
@@ -62,6 +117,8 @@
 
 /* ==== LOGIN FORM ==== */
 #login_form {
+    height: 500px;
+    width: 500px;
     display: flex;
     flex-direction: column;
     padding: 2px 45px 2px 45px;
@@ -75,11 +132,12 @@
 /* ==== SOCIAL MEDIA ==== */
 #social_media {
     display: flex;
-    justify-content: space-around;
-    border-bottom: 1px solid var(--color-green-50);
+    justify-content: center;
 }
 
 #social_media img {
+    margin-left: 12px;
+    margin-right: 12px;
     margin-top: 15px;
     width: 18px;
 }
@@ -95,11 +153,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 50px;
     gap: 12px;
 }
 
-.input-box>label {
+.input-box label {
     font-size: 12px;
     color: var(--color-dark-50);
 }
@@ -119,7 +176,7 @@
 
 .input_field input {
     border: none;
-    width: 260px;
+    width: 290px;
     padding-bottom: 10px;
     padding-left: 10px;
     background-color: transparent;
@@ -167,6 +224,7 @@
     bottom: 0px;
     font-size: 0.55rem;
     font-weight: normal;
+    margin-bottom: 7px;
 }
 
 .love p {
